@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blueback Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+      min-height: 450px;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(135deg, #1e90ff, #4a90e2);
+      color: white;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Blue shapes on left panel - wavy shapes */
+    .left::before, .left::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+    .left::before {
+      width: 300px;
+      height: 300px;
+      background: #2b7de9;
+      top: -80px;
+      right: -100px;
+      transform: rotate(45deg);
+    }
+    .left::after {
+      width: 200px;
+      height: 200px;
+      background: #1a6ad8;
+      bottom: -60px;
+      left: -80px;
+      transform: rotate(55deg);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 38px;
+      gap: 10px;
+      z-index: 1;
+    }
+
+    .logo-icon {
+      font-weight: 900;
+      font-size: 46px;
+      background: #2e85ff;
+      padding: 5px 12px 3px 12px;
+      border-radius: 8px;
+      user-select: none;
+      z-index: 2;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    .logo-text {
+      user-select: none;
+      letter-spacing: 1.5px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+
+    .left-description {
+      margin-top: 25px;
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 300px;
+      z-index: 1;
+      user-select: none;
+    }
+
+    .right {
+      flex: 1;
+      background: #f9fafb;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 40px 50px;
+      box-shadow: inset 10px 0 20px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      font-weight: 700;
+      font-size: 28px;
+      color: #2a4d8f;
+      margin-bottom: 8px;
+      user-select: none;
+    }
+
+    .right p.subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 35px;
+      user-select: none;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 13px 15px;
+      background: #c0d9d1;
+      border: none;
+      border-radius: 15px;
+      font-size: 14px;
+      color: #555;
+      letter-spacing: 0.02em;
+      transition: background 0.3s ease;
+    }
+
+    input[type="email"]::placeholder,
+    input[type="password"]::placeholder {
+      color: #8caea9;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      background: #9cd1c5;
+      color: #1a1a1a;
+      box-shadow: 0 0 8px rgba(50, 150, 100, 0.5);
+    }
+
+    .forgot-link {
+      font-size: 12px;
+      color: #666;
+      margin-top: -10px;
+      margin-bottom: 25px;
+      user-select: none;
+      cursor: pointer;
+      text-decoration: underline;
+      text-align: right;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .forgot-link:hover {
+      color: #1e90ff;
+    }
+
+    button {
+      width: 100%;
+      background: #1e90ff;
+      border: none;
+      padding: 13px 0;
+      border-radius: 50px;
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      box-shadow: 0 6px 10px rgba(30,144,255,0.6);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+
+    button:hover {
+      background: #3a9dff;
+      box-shadow: 0 8px 20px rgba(30,144,255,0.8);
+    }
+
+    .signup-text {
+      font-size: 12px;
+      text-align: center;
+      color: #616161;
+      margin-top: 22px;
+      user-select: none;
+    }
+
+    .signup-text a {
+      color: #1e90ff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+      color: #3a9dff;
+    }
+
+    @media(max-width: 720px) {
+      .container {
+        flex-direction: column;
+        border-radius: 15px;
+        max-width: 400px;
+      }
+      .left, .right {
+        border-radius: 0;
+        min-height: 220px;
+        padding: 30px 25px;
+      }
+      .left {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        min-height: 180px;
+      }
+      .right {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      .left-description {
+        max-width: 100%;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Formulario de inicio de sesión Blueback">
+    <section class="left" aria-label="Panel de bienvenida Blueback con logotipo y descripción">
+      <div class="logo" aria-hidden="true">
+        <div class="logo-icon" aria-hidden="true">B</div>
+        <div class="logo-text">BLUEBACK</div>
+      </div>
+      <p class="left-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+    <section class="right" aria-label="Formulario de inicio de sesión">
+      <h2>Welcome</h2>
+      <p class="subtitle">Login in to your account to continue</p>
+      <form>
+        <div class="form-group">
+          <input type="email" placeholder="Email" autocomplete="username" aria-label="Correo electrónico" required/>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" autocomplete="current-password" aria-label="Contraseña" required/>
+        </div>
+        <a href="#" class="forgot-link" tabindex="0" aria-label="Olvidaste tu contraseña">forgot your password?</a>
+        <button type="submit" aria-label="Iniciar sesión">LOG IN</button>
+      </form>
+      <p class="signup-text">
+        Don't have an account? <a href="#" aria-label="Regístrate">Sign up</a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
+

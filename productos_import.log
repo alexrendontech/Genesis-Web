@@ -1,0 +1,62 @@
+[2025-07-23 21:31:54] Inicio del proceso
+[2025-07-23 21:31:54] Cliente ID recibido: 5
+[2025-07-23 21:31:54] Cliente encontrado: POSTOBON
+[2025-07-23 21:31:54] Archivo recibido: productos_postobon.xlsx
+[2025-07-23 21:31:54] Filas en el archivo: 4
+[2025-07-23 21:31:54] Encabezados: NOMBRE CLIENTE, EMPRESA, CODIGO DE BARRAS, ID CLIENTE, MARCA, CATEGORIAS, SEGMENTO, DESCRIPCION DEL PRODUCTO NUEVO, PRESENTACION, UNIDAD PRESENTACION, AGOTADOS, INVENTARIOS, SUGERIDOS, UNIDADES SURTIDAS, DEVOLUCIONES, AVERIAS, TRANSFERENCIAS, PRECIOS, VENTAS, PRECIO PRODUCTO, VIGENCIA, COMPETENCIA
+[2025-07-23 21:31:54] Procesando fila 1: ["POSTOBON","Postob\u00f3n S.A","7701234567890","3","Pepsi","Bebidas","Gaseosa","Pepsi 400ml sabor original","1","UND","1","1","1","1","1","0","1","1","1","1","0","0"]
+[2025-07-23 21:31:54] Fila 1 insertada: 7701234567890 - Pepsi
+[2025-07-23 21:31:54] Procesando fila 2: ["POSTOBON","Postob\u00f3n S.A","7701234567891","3","Manzana","Bebidas","Gaseosa","Manzana Postob\u00f3n 400ml","1","UND","1","1","1","1","0","1","1","1","0","1","1","0"]
+[2025-07-23 21:31:54] Fila 2 insertada: 7701234567891 - Manzana
+[2025-07-23 21:31:54] Procesando fila 3: ["POSTOBON","Postob\u00f3n S.A","7701234567892","3","Colombiana","Bebidas","Gaseosa","Colombiana 400ml tradicional","1","UND","1","0","1","1","1","1","1","1","1","1","1","0"]
+[2025-07-23 21:31:54] Fila 3 insertada: 7701234567892 - Colombiana
+[2025-07-23 21:31:54] Proceso completado. Insertados: 3, Omitidos: 0, Errores: 0
+[2025-07-23 21:31:54] Conexión cerrada
+
+[2025-07-23 21:32:26] Inicio del proceso
+[2025-07-23 21:32:26] Cliente ID recibido: 10
+[2025-07-23 21:32:26] Cliente encontrado: COCA COLA
+[2025-07-23 21:32:26] Archivo recibido: productos_COCACOLA.xlsx
+[2025-07-23 21:32:26] Filas en el archivo: 4
+[2025-07-23 21:32:26] Encabezados: NOMBRE CLIENTE, EMPRESA, CODIGO DE BARRAS, ID CLIENTE, MARCA, CATEGORIAS, SEGMENTO, DESCRIPCION DEL PRODUCTO NUEVO, PRESENTACION, UNIDAD PRESENTACION, AGOTADOS, INVENTARIOS, SUGERIDOS, UNIDADES SURTIDAS, DEVOLUCIONES, AVERIAS, TRANSFERENCIAS, PRECIOS, VENTAS, PRECIO PRODUCTO, VIGENCIA, COMPETENCIA
+[2025-07-23 21:32:26] Procesando fila 1: ["COCACOLA","COCACOLA S.A","7701234567890","10","Pepsi","Bebidas","Gaseosa","Pepsi 400ml sabor original","1","UND","1","1","0","0","1","0","0","1","0","0","0","0"]
+[2025-07-23 21:32:26] Fila 1 insertada: 7701234567890 - Pepsi
+[2025-07-23 21:32:26] Procesando fila 2: ["COCACOLA","COCACOLA S.A","7701234567891","10","Manzana","Bebidas","Gaseosa","Manzana Postob\u00f3n 400ml","1","UND","1","1","0","0","1","0","0","1","0","0","0","0"]
+[2025-07-23 21:32:26] Fila 2 insertada: 7701234567891 - Manzana
+[2025-07-23 21:32:26] Procesando fila 3: ["COCACOLA","COCACOLA S.A","7701234567892","10","Colombiana","Bebidas","Gaseosa","Colombiana 400ml tradicional","1","UND","1","0","0","0","1","0","0","1","0","0","0","0"]
+[2025-07-23 21:32:26] Fila 3 insertada: 7701234567892 - Colombiana
+[2025-07-23 21:32:26] Proceso completado. Insertados: 3, Omitidos: 0, Errores: 0
+[2025-07-23 21:32:26] Conexión cerrada
+
+[2025-07-23 21:36:41] Inicio del proceso
+[2025-07-23 21:36:41] Cliente ID recibido: 5
+[2025-07-23 21:36:41] Cliente encontrado: POSTOBON
+[2025-07-23 21:36:41] Archivo recibido: productos_postobon.xlsx
+[2025-07-23 21:36:41] Filas en el archivo: 4
+[2025-07-23 21:36:41] Encabezados: NOMBRE CLIENTE, EMPRESA, CODIGO DE BARRAS, ID CLIENTE, MARCA, CATEGORIAS, SEGMENTO, DESCRIPCION DEL PRODUCTO NUEVO, PRESENTACION, UNIDAD PRESENTACION, AGOTADOS, INVENTARIOS, SUGERIDOS, UNIDADES SURTIDAS, DEVOLUCIONES, AVERIAS, TRANSFERENCIAS, PRECIOS, VENTAS, PRECIO PRODUCTO, VIGENCIA, COMPETENCIA
+[2025-07-23 21:36:41] Procesando fila 1: ["POSTOBON","Postob\u00f3n S.A","7701234567890","3","Pepsi","Bebidas","Gaseosa","Pepsi 400ml sabor original","1","UND","1","1","0","0","1","0","0","1","0","0","0","0"]
+[2025-07-23 21:36:41] Fila 1 insertada: 7701234567890 - Pepsi
+[2025-07-23 21:36:41] Procesando fila 2: ["POSTOBON","Postob\u00f3n S.A","7701234567891","3","Manzana","Bebidas","Gaseosa","Manzana Postob\u00f3n 400ml","1","UND","1","1","0","0","0","0","0","1","0","0","0","0"]
+[2025-07-23 21:36:41] Fila 2 insertada: 7701234567891 - Manzana
+[2025-07-23 21:36:41] Procesando fila 3: ["POSTOBON","Postob\u00f3n S.A","7701234567892","3","Colombiana","Bebidas","Gaseosa","Colombiana 400ml tradicional","1","UND","1","1","0","0","1","0","0","1","0","0","0","0"]
+[2025-07-23 21:36:41] Fila 3 insertada: 7701234567892 - Colombiana
+[2025-07-23 21:36:41] Proceso completado. Insertados: 3, Omitidos: 0, Errores: 0
+[2025-07-23 21:36:41] Conexión cerrada
+
+[2025-07-23 21:51:39] Inicio del proceso
+[2025-07-23 21:51:39] Acceso inválido al script
+[2025-07-23 22:12:51] Inicio del proceso
+[2025-07-23 22:12:51] Cliente ID recibido: 5
+[2025-07-23 22:12:51] Cliente encontrado: POSTOBON
+[2025-07-23 22:12:51] Archivo recibido: productos_postobon.xlsx
+[2025-07-23 22:12:51] Filas en el archivo: 4
+[2025-07-23 22:12:51] Encabezados: NOMBRE CLIENTE, EMPRESA, CODIGO DE BARRAS, ID CLIENTE, MARCA, CATEGORIAS, SEGMENTO, DESCRIPCION DEL PRODUCTO NUEVO, PRESENTACION, UNIDAD PRESENTACION, AGOTADOS, INVENTARIOS, SUGERIDOS, UNIDADES SURTIDAS, DEVOLUCIONES, AVERIAS, TRANSFERENCIAS, PRECIOS, VENTAS, PRECIO PRODUCTO, VIGENCIA, COMPETENCIA, ACTIVIDADES
+[2025-07-23 22:12:51] Procesando fila 1: ["POSTOBON","Postob\u00f3n S.A","7701234567890","3","Pepsi","Bebidas","Gaseosa","Pepsi 400ml sabor original","1","UND","1","1","0","0","1","0","0","1","0","0","0","0","1"]
+[2025-07-23 22:12:51] Fila 1 insertada: 7701234567890 - Pepsi
+[2025-07-23 22:12:51] Procesando fila 2: ["POSTOBON","Postob\u00f3n S.A","7701234567891","3","Manzana","Bebidas","Gaseosa","Manzana Postob\u00f3n 400ml","1","UND","1","1","0","0","0","0","0","1","0","0","0","0","1"]
+[2025-07-23 22:12:51] Fila 2 insertada: 7701234567891 - Manzana
+[2025-07-23 22:12:51] Procesando fila 3: ["POSTOBON","Postob\u00f3n S.A","7701234567892","3","Colombiana","Bebidas","Gaseosa","Colombiana 400ml tradicional","1","UND","1","1","0","0","1","0","0","1","0","0","0","0","1"]
+[2025-07-23 22:12:51] Fila 3 insertada: 7701234567892 - Colombiana
+[2025-07-23 22:12:51] Proceso completado. Insertados: 3, Omitidos: 0, Errores: 0
+[2025-07-23 22:12:51] Conexión cerrada
+
